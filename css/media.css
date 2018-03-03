@@ -1,0 +1,1441 @@
+@media (min-width: 1200px){
+  *{
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', Arial, Helvetica, Sans-serif, Verdana, Tahoma
+}
+
+.container{
+  width: 100%;
+  margin: 0 auto;
+}
+nav {
+  width: 100%;
+  height: 30px;
+  background-color: rgba(64, 48, 105, 0.85);
+  /*position: fixed;*/
+  top: 0;
+  left: 0;
+  z-index: 100
+}
+nav .navWrap .menu {
+  list-style-type: none;
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-end
+}
+.navWrap ul li {
+  padding: 5px;
+  transition: all .5s
+}
+.navWrap ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 13px
+}
+.navWrap ul li a:hover {
+  color: blue
+}
+header {
+  width: 100%;
+  height: 65px;
+  background-color: lightblue;
+  display: flex;
+  /*margin-top: 30px*/
+}
+header .headWrap{
+  display: flex;
+  padding-left: 435px;
+}
+header .logo {
+  width: 60%;
+  text-align: center
+}
+header .logo a {
+  text-decoration: none;
+  color: rgba(64, 48, 105, 0.85);
+  padding-bottom: 5px
+}
+header .logo h1 {
+  padding: 5px 10px;
+  font-size: 45px
+}
+/*!!!!!!!!!!SOCIALS!!!!!!!!!!!!!!*/
+
+#socials {
+  display: flex;
+  justify-content: space-around;
+/*  width: 20%;*/
+  height: 35px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 45px;
+  position: absolute;
+  left: 5px;
+}
+
+#twitter{
+  margin: 0px 25px;
+  } 
+#socials .fa:hover {
+  opacity: 0.7
+}
+/*!!!!!!!!!! SEARCH BUTTON !!!!!!!!!!*/
+
+form.example {
+  max-width: 300px;
+  width: 20%;
+  margin-left: 125px !important;
+  max-width: 300px;
+  display: flex
+}
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  display: none;
+  background: #f1f1f1
+}
+form.example button {
+  float: left;
+  width: 40%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer
+}
+form.example button:hover {
+  background: #0b7dda
+}
+form.example::after {
+  content: "";
+  clear: both;
+  display: table
+}
+/*!!!!!!!!!!!SECTION MAIN!!!!!!!!!!!!!!*/
+
+#main {
+  width: 100%;
+  height: 466px;
+/*  display: flex;
+  align-items: stretch;*/
+}
+#main .mainWrap{
+  width: 100%;
+    height: 466px;
+    display: flex;
+    align-items: stretch;
+}
+#leagues {
+  width: 200px;
+  height: 466px;
+  top: 0;
+  left: 0
+}
+#leagues .dropMenu {
+  width: 200px;
+  height: 466px;
+  position: relative;
+  top: 0;
+  left: 0
+}
+.accordion {
+  width: 100%;
+  max-width: 768px;
+  margin: 0px auto 0px;
+  list-style-type: none;
+  background-color: rgba(170, 208, 0, 1)
+}
+.accordion .link {
+  cursor: pointer;
+  display: block;
+  padding: 18px 15px 16px 40px;
+  color: #4D4D4D;
+  font-size: 15px;
+  font-weight: 700;
+  border-bottom: 1px solid #CCC;
+  position: relative;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease
+}
+.accordion li:last-child .link {
+  border-bottom: 0
+}
+.accordion li i {
+  position: absolute;
+  top: 18px;
+  left: 12px;
+  font-size: 16px;
+  color: #595959;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease
+}
+.accordion li i.fa-chevron-down {
+  right: 12px;
+  left: auto;
+  font-size: 16px
+}
+.accordion li.open .link {
+  color: #b63b4d
+}
+.accordion li.open i {
+  color: #b63b4d
+}
+.accordion li.open i.fa-chevron-down {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg)
+}
+.submenu {
+  display: none;
+  background: #444359;
+  font-size: 14px
+}
+.submenu li {
+  border-bottom: 1px solid #4b4a5e
+}
+.submenu a {
+  display: block;
+  text-decoration: none;
+  color: #d9d9d9;
+  padding: 12px;
+  padding-left: 42px;
+  -webkit-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease
+}
+.submenu a:hover {
+  background: #b63b4d;
+  color: #FFF
+}
+#mySlider {
+  width: 100%;
+  height: 466px
+}
+
+[style*="slide1"] .heading {
+  position: absolute;
+  top: 322px;
+  left: 240px;
+  color: white;
+  padding: 34px;
+  border: 1px solid white
+}
+[style*="slide2"] .heading {
+  position: absolute;
+  top: 318px;
+  left: 214px;
+  color: white;
+  padding: 34px;
+  border: 1px solid white
+}
+[style*="slide3"] .heading {
+  position: absolute;
+  top: 297px;
+  left: 200px;
+  color: white;
+  padding: 40px;
+  border: 1px solid white
+}
+.slidesbg-pagination {
+  position: absolute;
+  left: 50%;
+  z-index: 2;
+  transform: translate(-50%, 0)
+}
+.slidesbg-pagination ul {
+  margin: 0;
+  padding: 0
+}
+.slidesbg-pagination ul li {
+  display: inline-block
+}
+.slidesbg-pagination ul li a {
+  padding: 4px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  font-size: 0;
+  margin-right: 5px;
+  cursor: pointer;
+  transition: all .3s
+}
+.slidesbg-pagination ul li a:active,
+.slidesbg-pagination ul li a.active,
+.slidesbg-pagination ul li a:focus,
+.slidesbg-pagination ul li a:hover {
+  border-color: #000;
+  background-color: #000
+}
+.slidesbg-overlay {
+  background-color: rgba(0, 0, 0, .2);
+  z-index: 1
+}
+/*!!!!!!!!!РУБРИКА НОВИНИ!!!!!!!!!*/
+
+#news {
+  width: 98%;
+  margin-top: 0px;
+  height: auto;
+  color: blue
+}
+#news .newsWrap {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  padding: 20px 20px 20px 50px;
+}
+#news .newsStream {
+  width: 300px;
+  height: 495px;
+  text-align: center;
+  border: 3px solid yellow
+}
+#news .newsStream .line {
+  width: 95px;
+  position: relative;
+  border: 2px solid yellow;
+  margin-left: 100px;
+  margin-bottom: 10px
+}
+#news .videoStream .line {
+  width: 95px;
+  position: relative;
+  border: 2px solid yellow;
+  margin-left: 100px;
+  margin-bottom: 10px
+}
+#news .newsStream ul li {
+  list-style-type: none;
+  font-size: 13px
+}
+#news .newsStream ul li a {
+  text-decoration: none
+}
+#news .newsStream ul li a:hover {
+  text-decoration: underline;
+  color: red
+}
+#news .videoStream {
+  width: 300px;
+  height: 495px;
+  text-align: center;
+  border: 3px solid yellow
+}
+#news .videoStream ul li {
+  list-style-type: none
+}
+.btn {
+  border: none;
+  margin: 10px auto;
+  background-color: #ff9800;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px 4px 0 0
+}
+.btnVid {
+  border: none;
+  margin: 5px auto;
+  background-color: #ff9800;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px 4px 0 0
+}
+.btn:hover,
+.btnVid:hover {
+  background: #e68a00
+}
+#news .newsContent {
+  width: 400px;
+  height: 200px;
+  position: absolute;
+  left: 2px;
+  border: 1px solid black;
+  border-radius: 4px 4px;
+  display: flex;
+  visibility: hidden
+}
+#news .newsContent .newsPic {
+  width: 250px;
+  height: 200px;
+  background-image: url("../img/CriRo.jpg");
+  background-size: cover
+}
+#news .newsContent .newsText {
+  width: 150px;
+  height: 200px;
+  color: #fff;
+  text-align: left;
+  font-size: 14px;
+  background-color: black;
+  padding-left: 2px;
+  padding-top: 2px
+}
+
+
+.active {
+  border: 2px solid black;
+  color: #ff9800
+}
+#UA {
+  width: 100%;
+  height: 740px;
+  background-color: cornflowerblue
+}
+#UA .UaWrap {
+  text-align: center;
+  padding: 0 50px 50px 50px;
+}
+#UA .UaWrap h2 {
+  padding-top: 25px;
+  padding-bottom: 25px
+}
+#UA  .upperItems{
+  list-style-type: none;
+  align-items: stretch;
+  justify-content: space-between;
+  display: flex;
+  color: black
+}
+#UA  .upperItems li {
+  text-align: center;
+  text-decoration: none;
+  font: normal 20px/30px Arial;
+  padding: 14px 52px;
+  background-color: #fff;
+  border-radius: 4px 4px 0 0
+}
+#UA  .upperItems li:hover {
+  background-color: #4b00ff
+}
+#UA  .lowerItems{
+  list-style-type: none;
+  align-items: stretch;
+  display: flex;
+  flex-wrap: wrap;
+  color: black
+}
+#UA  .lowerItems li {
+  text-decoration: none;
+}
+#UA .UaWrap .tab {
+  width: auto;
+  height: 500px;
+  display: none;
+  padding: 50px 100px 15px 200px;
+  color: black;
+  background-color: yellow;
+}
+#UA .UaWrap .tabContent {
+  width: 325px;
+  height: 200px;
+  border: 1px solid black;
+  border-radius: 4px 4px;
+  display: flex;
+  margin-left: 95px;
+  margin-bottom: 10px
+}
+#UA .UaWrap .tabPic {
+  width: 200px;
+  height: 200px;
+  background-image: url("../img/nationsLeague.jpg")
+}
+#UA .UaWrap .tabText {
+  width: 125px;
+  height: 200px;
+  color: #fff;
+  text-align: left;
+  font-size: 17px;
+  background-color: black;
+  padding-left: 5px;
+  overflow: hidden
+}
+.btnTab {
+  border: none;
+  display: block;
+  margin: 20px auto 20px 410px;
+  background-color: #ff9800;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px 4px 0 0
+}
+.btnTab:hover {
+  background: #e68a00
+}
+/*!!!!!! ПІДВАЛ !!!!!*/
+
+footer {
+  width: 100%;
+  height: 300px;
+  background-color: lightgray;
+  border-top: 2px solid black
+}
+footer .container .footerWrap {
+  display: flex;
+  padding: 50px;
+  justify-content: space-between
+}
+footer .container .footerWrap p {
+  font-size: 13px;
+  font-weight: bold
+}
+footer li {
+  padding-bottom: 5px
+}
+footer .footerLink {
+  width: 131px;
+  height: 110px;
+  text-align: left;
+  margin-right: 20px
+}
+footer .footerLink ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px
+}
+footer .footerLink p {
+  padding-bottom: 7px
+}
+footer ul {
+  list-style-type: none
+}
+footer .animation {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 900px
+}
+
+
+@media (max-width: 960px){
+
+.container{
+  width: 100%;
+  margin: 0 auto;
+}
+nav {
+    width: 100%;
+    height: 30px;
+    background-color: rgba(64, 48, 105, 0.85);
+    position: fixed;
+}
+nav .navWrap .menu {
+    list-style-type: none;
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+}
+nav .navWrap ul li {
+  padding: 5px;
+  transition: all .5s
+}
+nav .navWrap ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 13px
+}
+nav .navWrap ul li a:hover {
+  color: blue
+}
+header {
+  width: 100%;
+  height: 65px;
+  background-color: lightblue;
+  display: flex;
+  position: relative;
+  top: 30px;
+}
+header .container .headWrap{
+  /*width: 100%;*/
+  height: 100%;
+  display: flex;
+    padding-left: 235px;
+}
+header .logo {
+ /* width: 285px;*/
+  text-align: center
+}
+header .container .headWrap h1{
+    font-size: 30px;
+    color: green;
+    padding-top: 10px;
+}
+
+#socials {
+    display: flex;
+    justify-content: space-around;
+    /* width: 20%; */
+    height: 35px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    position: absolute;
+    left: 5px
+    }
+
+form.example {
+  max-width: 300px;
+  width: 20%;
+  /*margin-left: 125px !important;*/
+  max-width: 300px;
+  display: flex
+}
+[style*="slide1"] {
+   max-width: 100%;
+    height: auto;
+}
+[style*="slide1"] .heading {
+  position: absolute;
+  top: 322px;
+  left: 50px;
+  color: white;
+  padding: 34px;
+  border: 1px solid white
+}
+[style*="slide2"] .heading {
+  position: absolute;
+  top: 315px;
+  left: 50px;
+  color: white;
+  padding: 34px;
+  border: 1px solid white
+}
+[style*="slide3"] .heading {
+  position: absolute;
+  top: 315px;
+  left: 50px;
+  color: white;
+  padding: 34px;
+  border: 1px solid white
+}
+#main {
+  width: 100%;
+  height: 466px;
+  display: flex;
+  align-items: stretch;
+  position: relative;
+  margin-top: 0
+}
+#news {
+  width: 100% !important;
+  height: 505px;
+  color: blue;
+  padding: 20px 20px
+}
+#news .newsWrap {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch
+}
+#news .newsStream {
+  width: 300px;
+  height: 495px;
+  text-align: center;
+  border: 3px solid yellow
+}
+#news .newsStream .line {
+  width: 95px;
+  position: relative;
+  border: 2px solid yellow;
+  margin-left: 100px;
+  margin-bottom: 10px
+}
+#news .videoStream .line {
+  width: 95px;
+  position: relative;
+  border: 2px solid yellow;
+  margin-left: 100px;
+  margin-bottom: 10px
+}
+#news .newsStream ul li {
+  list-style-type: none;
+  font-size: 13px
+}
+#news .newsStream ul li a {
+  text-decoration: none
+}
+#news .newsStream ul li a:hover {
+  text-decoration: underline;
+  color: red
+}
+#news .videoStream {
+  width: 300px;
+  height: 495px;
+  text-align: center;
+  border: 3px solid yellow
+}
+#news .videoStream ul li {
+  list-style-type: none
+}
+.btn {
+  border: none;
+  margin: 10px auto;
+  background-color: #ff9800;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px 4px 0 0
+}
+.btnVid {
+  border: none;
+  margin: 5px auto;
+  background-color: #ff9800;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px 4px 0 0
+}
+.btn:hover,
+.btnVid:hover {
+  background: #e68a00
+}
+#news .newsContent {
+  width: 400px;
+  height: 200px;
+  position: absolute;
+  left: 2px;
+  border: 1px solid black;
+  border-radius: 4px 4px;
+  display: flex;
+  visibility: hidden
+}
+#news .newsContent .newsPic {
+  width: 250px;
+  height: 200px;
+  background-image: url("../img/CriRo.jpg");
+  background-size: cover
+}
+#news .newsContent .newsText {
+  width: 150px;
+  height: 200px;
+  color: #fff;
+  text-align: left;
+  font-size: 14px;
+  background-color: black;
+  padding-left: 2px;
+  padding-top: 2px
+}
+
+#UA {
+  width: 100%;
+  height: 740px;
+  background-color: cornflowerblue
+}
+#UA .UaWrap {
+  text-align: center
+}
+#UA .UaWrap h2 {
+  padding-top: 25px;
+  padding-bottom: 25px
+}
+#UA  .upperItems{
+  list-style-type: none;
+  align-items: stretch;
+  justify-content: space-between;
+  display: flex;
+  color: black
+}
+#UA  .upperItems li {
+  text-align: center;
+  text-decoration: none;
+  font: normal 20px/30px Arial;
+  padding: 14px 52px;
+  background-color: #fff;
+  border-radius: 4px 4px 0 0
+}
+#UA  .upperItems li:hover {
+  background-color: #4b00ff
+}
+#UA  .lowerItems{
+  list-style-type: none;
+  align-items: stretch;
+  display: flex;
+  flex-wrap: wrap;
+  color: black
+}
+#UA  .lowerItems li {
+  text-decoration: none;
+}
+#UA .UaWrap .tab {
+  width: 100%;
+  height: 500px;
+  display: none;
+  padding-top: 50px;
+  color: black;
+  background-color: yellow;
+}
+#UA .UaWrap .tabContent {
+  width: 325px;
+  height: 200px;
+  border: 1px solid black;
+  border-radius: 4px 4px;
+  display: flex;
+  margin-left: 95px;
+  margin-bottom: 10px
+}
+#UA .UaWrap .tabPic {
+  width: 200px;
+  height: 200px;
+  background-image: url("../img/nationsLeague.jpg")
+}
+#UA .UaWrap .tabText {
+  width: 125px;
+  height: 200px;
+  color: #fff;
+  text-align: left;
+  font-size: 17px;
+  background-color: black;
+  padding-left: 5px;
+  overflow: hidden
+}
+.btnTab {
+  border: none;
+  display: block;
+  margin: 20px auto;
+  background-color: #ff9800;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px 4px 0 0
+}
+.btnTab:hover {
+  background: #e68a00
+}
+
+footer {
+  width: 100%;
+  height: 300px;
+  background-color: lightgray;
+  border-top: 2px solid black
+}
+footer .container .footerWrap {
+  display: flex;
+  padding-top: 50px;
+  justify-content: space-between
+}
+footer .footerWrap p {
+  font-size: 13px;
+  font-weight: bold
+}
+footer li {
+  padding-bottom: 5px
+}
+footer .footerLink {
+  width: 131px;
+  height: 110px;
+  text-align: left;
+  margin-right: 20px
+}
+footer .footerLink ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px
+}
+footer .footerLink p {
+  padding-bottom: 7px
+}
+footer ul {
+  list-style-type: none
+}
+footer .animation {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 720px
+}
+
+@media (max-width: 768px){
+
+.container{
+  width: 960px;
+  margin: 0 auto;
+}
+nav {
+  width: 100%;
+  height: 30px;
+  background-color: rgba(64, 48, 105, 0.85);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100
+}
+nav .navWrap .menu {
+  list-style-type: none;
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-end;
+}
+.navWrap ul li {
+  padding: 5px;
+  transition: all .5s
+}
+.navWrap ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 13px
+}
+.navWrap ul li a:hover {
+  color: blue
+}
+header {
+  width: 100%;
+  height: 65px;
+  background-color: lightblue;
+  display: flex;
+  margin-top: 30px
+}
+header .headWrap{
+  display: flex;
+  padding-left: 235px;
+}
+header .logo {
+  width: 60%;
+  text-align: center
+}
+header .logo a {
+  text-decoration: none;
+  color: rgba(64, 48, 105, 0.85);
+  padding-bottom: 5px
+}
+header .logo h1 {
+  padding: 5px 10px;
+  font-size: 45px
+}
+/*!!!!!!!!!!SOCIALS!!!!!!!!!!!!!!*/
+
+#socials {
+  display: flex;
+  justify-content: space-around;
+/*  width: 20%;*/
+  height: 35px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 45px;
+  position: absolute;
+  left: 5px;
+}
+
+#twitter{
+  margin: 0px 25px;
+  } 
+#socials .fa:hover {
+  opacity: 0.7
+}
+/*!!!!!!!!!! SEARCH BUTTON !!!!!!!!!!*/
+
+form.example {
+  max-width: 300px;
+  width: 20%;
+  margin-left: 125px !important;
+  max-width: 300px;
+  display: flex
+}
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  display: none;
+  background: #f1f1f1
+}
+form.example button {
+  float: left;
+  width: 40%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer
+}
+form.example button:hover {
+  background: #0b7dda
+}
+form.example::after {
+  content: "";
+  clear: both;
+  display: table
+}
+/*!!!!!!!!!!!SECTION MAIN!!!!!!!!!!!!!!*/
+
+#main {
+  width: 100%;
+  height: 466px;
+  display: flex;
+  align-items: stretch;
+}
+#leagues {
+  width: 200px;
+  height: 466px;
+  top: 0;
+  left: 0
+}
+#leagues .dropMenu {
+  width: 200px;
+  height: 466px;
+  position: relative;
+  top: 0;
+  left: 0
+}
+.accordion {
+  width: 100%;
+  max-width: 768px;
+  margin: 0px auto 0px;
+  list-style-type: none;
+  background-color: rgba(170, 208, 0, 1)
+}
+.accordion .link {
+  cursor: pointer;
+  display: block;
+  padding: 18px 15px 16px 40px;
+  color: #4D4D4D;
+  font-size: 15px;
+  font-weight: 700;
+  border-bottom: 1px solid #CCC;
+  position: relative;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease
+}
+.accordion li:last-child .link {
+  border-bottom: 0
+}
+.accordion li i {
+  position: absolute;
+  top: 18px;
+  left: 12px;
+  font-size: 16px;
+  color: #595959;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease
+}
+.accordion li i.fa-chevron-down {
+  right: 12px;
+  left: auto;
+  font-size: 16px
+}
+.accordion li.open .link {
+  color: #b63b4d
+}
+.accordion li.open i {
+  color: #b63b4d
+}
+.accordion li.open i.fa-chevron-down {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg)
+}
+.submenu {
+  display: none;
+  background: #444359;
+  font-size: 14px
+}
+.submenu li {
+  border-bottom: 1px solid #4b4a5e
+}
+.submenu a {
+  display: block;
+  text-decoration: none;
+  color: #d9d9d9;
+  padding: 12px;
+  padding-left: 42px;
+  -webkit-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease
+}
+.submenu a:hover {
+  background: #b63b4d;
+  color: #FFF
+}
+#mySlider {
+  width: 100%;
+  height: 466px
+}
+
+[style*="slide1"] .heading {
+  position: absolute;
+  top: 322px;
+  left: 240px;
+  color: white;
+  padding: 34px;
+  border: 1px solid white
+}
+[style*="slide2"] .heading {
+  position: absolute;
+  top: 318px;
+  left: 214px;
+  color: white;
+  padding: 34px;
+  border: 1px solid white
+}
+[style*="slide3"] .heading {
+  position: absolute;
+  top: 297px;
+  left: 200px;
+  color: white;
+  padding: 40px;
+  border: 1px solid white
+}
+.slidesbg-pagination {
+  position: absolute;
+  left: 50%;
+  z-index: 2;
+  transform: translate(-50%, 0)
+}
+.slidesbg-pagination ul {
+  margin: 0;
+  padding: 0
+}
+.slidesbg-pagination ul li {
+  display: inline-block
+}
+.slidesbg-pagination ul li a {
+  padding: 4px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  font-size: 0;
+  margin-right: 5px;
+  cursor: pointer;
+  transition: all .3s
+}
+.slidesbg-pagination ul li a:active,
+.slidesbg-pagination ul li a.active,
+.slidesbg-pagination ul li a:focus,
+.slidesbg-pagination ul li a:hover {
+  border-color: #000;
+  background-color: #000
+}
+.slidesbg-overlay {
+  background-color: rgba(0, 0, 0, .2);
+  z-index: 1
+}
+/*!!!!!!!!!РУБРИКА НОВИНИ!!!!!!!!!*/
+
+#news {
+  width: 100%;
+  margin-top: 0px;
+  height: 505px;
+  color: blue;
+  padding: 10px 10px
+}
+#news .newsWrap {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch
+}
+#news .newsStream {
+  width: 300px;
+  height: 495px;
+  text-align: center;
+  border: 3px solid yellow
+}
+#news .newsStream .line {
+  width: 95px;
+  position: relative;
+  border: 2px solid yellow;
+  margin-left: 100px;
+  margin-bottom: 10px
+}
+#news .videoStream .line {
+  width: 95px;
+  position: relative;
+  border: 2px solid yellow;
+  margin-left: 100px;
+  margin-bottom: 10px
+}
+#news .newsStream ul li {
+  list-style-type: none;
+  font-size: 13px
+}
+#news .newsStream ul li a {
+  text-decoration: none
+}
+#news .newsStream ul li a:hover {
+  text-decoration: underline;
+  color: red
+}
+#news .videoStream {
+  width: 300px;
+  height: 495px;
+  text-align: center;
+  border: 3px solid yellow
+}
+#news .videoStream ul li {
+  list-style-type: none
+}
+.btn {
+  border: none;
+  margin: 10px auto;
+  background-color: #ff9800;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px 4px 0 0
+}
+.btnVid {
+  border: none;
+  margin: 5px auto;
+  background-color: #ff9800;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px 4px 0 0
+}
+.btn:hover,
+.btnVid:hover {
+  background: #e68a00
+}
+#news .newsContent {
+  width: 400px;
+  height: 200px;
+  position: absolute;
+  left: 2px;
+  border: 1px solid black;
+  border-radius: 4px 4px;
+  display: flex;
+  visibility: hidden
+}
+#news .newsContent .newsPic {
+  width: 250px;
+  height: 200px;
+  background-image: url("../img/CriRo.jpg");
+  background-size: cover
+}
+#news .newsContent .newsText {
+  width: 150px;
+  height: 200px;
+  color: #fff;
+  text-align: left;
+  font-size: 14px;
+  background-color: black;
+  padding-left: 2px;
+  padding-top: 2px
+}
+
+
+.active {
+  border: 2px solid black;
+  color: #ff9800
+}
+#UA {
+  width: 100%;
+  height: 740px;
+  background-color: cornflowerblue
+}
+#UA .UaWrap {
+  text-align: center
+}
+#UA .UaWrap h2 {
+  padding-top: 25px;
+  padding-bottom: 25px
+}
+#UA  .upperItems{
+  list-style-type: none;
+  align-items: stretch;
+  justify-content: space-between;
+  display: flex;
+  color: black
+}
+#UA  .upperItems li {
+  text-align: center;
+  text-decoration: none;
+  font: normal 20px/30px Arial;
+  padding: 14px 52px;
+  background-color: #fff;
+  border-radius: 4px 4px 0 0
+}
+#UA  .upperItems li:hover {
+  background-color: #4b00ff
+}
+#UA  .lowerItems{
+  list-style-type: none;
+  align-items: stretch;
+  display: flex;
+  flex-wrap: wrap;
+  color: black
+}
+#UA  .lowerItems li {
+  text-decoration: none;
+}
+#UA .UaWrap .tab {
+  width: 100%;
+  height: 500px;
+  display: none;
+  padding-top: 50px;
+  color: black;
+  background-color: yellow;
+}
+#UA .UaWrap .tabContent {
+  width: 325px;
+  height: 200px;
+  border: 1px solid black;
+  border-radius: 4px 4px;
+  display: flex;
+  margin-left: 95px;
+  margin-bottom: 10px
+}
+#UA .UaWrap .tabPic {
+  width: 200px;
+  height: 200px;
+  background-image: url("../img/nationsLeague.jpg")
+}
+#UA .UaWrap .tabText {
+  width: 125px;
+  height: 200px;
+  color: #fff;
+  text-align: left;
+  font-size: 17px;
+  background-color: black;
+  padding-left: 5px;
+  overflow: hidden
+}
+.btnTab {
+  border: none;
+  display: block;
+  margin: 20px auto;
+  background-color: #ff9800;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px 4px 0 0
+}
+.btnTab:hover {
+  background: #e68a00
+}
+/*!!!!!! ПІДВАЛ !!!!!*/
+
+footer {
+  width: 100%;
+  height: 300px;
+  background-color: lightgray;
+  border-top: 2px solid black
+}
+footer .container .footerWrap {
+  display: flex;
+  padding-top: 50px;
+  justify-content: space-between
+}
+footer .container .footerWrap p {
+  font-size: 13px;
+  font-weight: bold
+}
+footer li {
+  padding-bottom: 5px
+}
+footer .footerLink {
+  width: 131px;
+  height: 110px;
+  text-align: left;
+  margin-right: 20px
+}
+footer .footerLink ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px
+}
+footer .footerLink p {
+  padding-bottom: 7px
+}
+footer ul {
+  list-style-type: none
+}
+footer .animation {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 720px
+}
+
+}
+
+/*@media (max-width: 425px){
+[style*="slide1"] {
+   max-width: 100%;
+    height: auto;
+}
+.container{
+  width: 100%;
+  margin: 0 auto;
+}
+nav{
+  width: 100%;
+}
+header{
+  width: 100%;
+  height: 60px;
+    display: flex;
+  margin-top: 30px
+}
+header .container {
+  width: 940px;
+  height: 60px;
+    display: flex;
+  text-align: center;
+}
+header .container .headWrap{
+  display: flex;
+  text-align: center;
+  padding-left: 270px;
+}
+header .container .headWrap .logo h1 {
+  padding: 5px 5px;
+  font-size: 40px;
+  color: red;
+}
+#main {
+  width: 100%;
+  height: 466px;
+  display: flex;
+  align-items: stretch;
+}
+[style*="slide1"] .heading {
+display: none;
+}
+[style*="slide2"] .heading {
+display: none;
+}
+[style*="slide3"] .heading {
+display: none;
+}
+#news {
+  width: 100%;
+  height: 505px;
+  color: blue;
+  padding: 10px 10px
+}
+#UA{
+  width: 100%;
+}
+footer{
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+}*/
